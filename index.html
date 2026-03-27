@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- page speed -->
+    <!-- https://pagespeed.web.dev/ -->
+
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header__container _container">
+                <h1 class="header__title">Подія року: Концерт у вашому місті!</h1>
+            
+                <nav class="nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#about-event" class="menu__link active">Про подію</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Квитки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section id="about-event" class="about-event__section">
+                <div class="about-event__container _container">
+                    <h2 class="about-event__title title">Про подію</h2>
+                    <p class="about-event__sub-title sub-title">
+                        Приєднуйтесь до незабутнього концерту із зірками української сцени.
+                        <br>
+                        Це подія, яку не можна пропустити!
+                    </p>
+
+                    <div class="about-event__body">
+                        <p class="about-event__text">
+                            <strong class="about-event__label">Дата:</strong>
+                            <span>25 березня 2025 року</span>
+                        </p>
+
+                        <p class="about-event__text">
+                            <strong class="about-event__label">Місце:</strong>
+                            <span> Концертна зала "Україна", Київ</span>
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="tickets__section">
+                <div class="tickets__container _container">
+                    <h2 class="tickets__title title">Квитки</h2>
+
+
+                    <form class="tickets__form">
+                        <div class="tickets-form__content">
+                            <h3 class="tickets-form__title">Виберіть тип квитка та заповніть форму</h3>
+
+                            <div class="tickets-form__body">
+
+                                <div class="tickets-form__fields">
+                                    <div class="tickets-form__field">
+                                         <label for="name" class="tickets-form__label">
+                                            <span class="tickets-form__label-text">Тип</span>
+                                            <select name="tickets" id="tickets-form__select">
+                                                <option value="standart" class="tickets-form__select-option tickets-select-option">Standart - 500 грн</option>
+                                                <option value="vip" class="tickets-form__select-option tickets-select-option">VIP - 1000 грн</option>
+                                             </select>
+                                         </label>
+                                    </div>
+    
+                                    <div class="tickets-form__field">
+                                        <label for="name" class="tickets-form__label">
+                                            <span class="tickets-form__label-text">Ім'я</span>
+                                            <input type="text" name="name" id="name" class="tickets-form__input name-input">
+                                        </label>
+                                    </div>
+                                    <div class="tickets-form__field">
+                                        <label for="name" class="tickets-form__label">
+                                            <span class="tickets-form__label-text">Пошта</span>
+                                            <input type="email" name="name" id="name" class="tickets-form__input email-input">
+                                        </label>
+                                    </div>
+                                    <div class="tickets-form__field">
+                                        <label for="name" class="tickets-form__label">
+                                            <span class="tickets-form__label-text" >Телефон</span>
+                                            <input type="tel" name="name" id="name" class="tickets-form__input tel-input">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tickets-form__actions">
+                                    <div class="tickets-form__action">
+                                        <button type="submit" class="reserve__btn reserve-action action__btn">Забронювати</button>
+                                    </div>
+                                    <!-- <div class="tickets-form__action">
+                                        <button type="reset" class="reset__btn reset-action">очистити</button>
+                                    </div> -->
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+            <section class="contact__section">
+                <div class="contact__container _container">
+                    <h2 class="contact__title title">Контакти</h2>
+
+                    <p class="contact__sub-title sub-title">Зв'яжіться з нами:</p>
+
+                    <address class="contact__info">
+                        <ul class="contact-info__list">
+
+                            <li class="contact-info__item">
+                                <span class="contact-info__label">Email:</span>
+                                <a 
+                                    href="mailto:info@tickets.ua" 
+                                    class="contact-info__link"
+                                > 
+                                    info@tickets.ua
+                                </a>
+                            </li>
+
+                            <li class="contact-info__item">
+                                <span class="contact-info__label">Телефон:</span>
+                                <a 
+                                    href="tel:+380121234567" 
+                                    class="contact-info__link
+                                ">
+                                    +380121234567
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </address>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container _container">
+                <p class="copy__text">
+                    &copy;2025 Бронювання квитків. Усі права захищено.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
